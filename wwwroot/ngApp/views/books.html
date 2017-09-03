@@ -1,0 +1,17 @@
+<header class="w3-container w3-theme w3-card-2">
+    <h1>Books</h1>
+</header>
+
+<div class="w3-container w3-text-theme">
+    <h2>{{ controller.message }}</h2>
+</div>
+
+<table class="w3-table-all">
+        <tr>
+            <th>Book Title</th>
+        </tr>
+        <tr ng-repeat="book in controller.books">
+            <td>{{book.title}}</td>
+            <td><button ng-click="controller.click(book.bookId)">More...</button></td>
+        </tr>
+</table>

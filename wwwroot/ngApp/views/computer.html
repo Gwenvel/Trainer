@@ -1,0 +1,23 @@
+<header class="w3-container w3-theme w3-card-2">
+    <h1>Computer</h1>
+</header>
+
+<div class="w3-container w3-text-theme">
+    <h2>{{ controller.message }}</h2>
+</div>
+
+<table class="w3-table-all">
+        <tr>
+            <th>Computer Brand</th>
+            <th>Computer CPU</th>
+            <th>Computer Memory</th>
+            <th>Computer Price</th>
+
+        </tr>
+        <tr>
+            <td>{{controller.computer.brand}}</td>
+            <td>{{controller.computer.cpu}}</td>
+            <td>{{controller.computer.memory}}</td>
+            <td>{{controller.computer.price | currency}}</td>
+        </tr>
+    </table>

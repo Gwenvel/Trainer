@@ -1,0 +1,23 @@
+<header class="w3-container w3-theme w3-card-2">
+    <h1>Cat</h1>
+</header>
+
+<div class="w3-container w3-text-theme">
+    <h2>{{ controller.message }}</h2>
+</div>
+
+<table class="w3-table-all">
+        <tr>
+            <th>Cat Name</th>
+            <th>Cat Age</th>
+            <th>Cat Owner</th>
+            <th>Cat Breed</th>
+
+        </tr>
+        <tr>
+            <td>{{controller.cat.name}}</td>
+            <td>{{controller.cat.age}}</td>
+            <td>{{controller.cat.owner}}</td>
+            <td>{{controller.cat.breed}}</td>
+        </tr>
+    </table>

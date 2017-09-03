@@ -1,5 +1,5 @@
 class MainController {
     constructor() {
-        this.message = "hello from main";
+        this.message = "Welcome to our Inventory....Choose what you like and see what we have.";
     }
 }

@@ -1,0 +1,21 @@
+<header class="w3-container w3-theme w3-card-2">
+    <h1>Book</h1>
+</header>
+
+<div class="w3-container w3-text-theme">
+    <h2>{{ controller.message }}</h2>
+</div>
+
+<table class="w3-table-all">
+        <tr>
+            <th>Book Title</th>
+            <th>Book Author</th>
+            <th>Book Price</th>
+
+        </tr>
+        <tr>
+            <td>{{controller.book.title}}</td>
+            <td>{{controller.book.author}}</td>
+            <td>{{controller.book.price | currency}}</td>
+        </tr>
+    </table>

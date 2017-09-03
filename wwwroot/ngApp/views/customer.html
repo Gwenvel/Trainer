@@ -1,0 +1,20 @@
+<header class="w3-container w3-theme w3-card-2">
+    <h1>Customer</h1>
+</header>
+
+<div class="w3-container w3-text-theme">
+    <h2>{{ controller.message }}</h2>
+</div>
+
+<table class="w3-table-all">
+        <tr>
+            <th>customer First Name</th>
+            <th>customer Last Name</th>
+            <th>customer Email</th>
+        </tr>
+        <tr>
+            <td>{{controller.customer.firstName}}</td>
+            <td>{{controller.customer.lastName}}</td>
+            <td>{{controller.customer.email}}</td>
+        </tr>
+    </table>

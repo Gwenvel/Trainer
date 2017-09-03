@@ -1,0 +1,17 @@
+<header class="w3-container w3-theme w3-card-2">
+    <h1>Customers</h1>
+</header>
+
+<div class="w3-container w3-text-theme">
+    <h2>{{ controller.message }}</h2>
+</div>
+
+<table class="w3-table-all">
+        <tr>
+            <th>Customer Email</th>
+        </tr>
+        <tr ng-repeat="customer in controller.customers">
+            <td>{{customer.email}}</td>
+            <td><button ng-click="controller.click(customer.customerId)">More...</button></td>
+        </tr>
+    </table>

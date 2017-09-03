@@ -1,0 +1,23 @@
+<header class="w3-container w3-theme w3-card-2">
+    <h1>Dog</h1>
+</header>
+
+<div class="w3-container w3-text-theme">
+    <h2>{{ controller.message }}</h2>
+</div>
+
+<table class="w3-table-all">
+        <tr>
+            <th>Dog Name</th>
+            <th>Dog Age</th>
+            <th>Dog Owner</th>
+            <th>Dog Breed</th>
+
+        </tr>
+        <tr>
+            <td>{{controller.dog.name}}</td>
+            <td>{{controller.dog.age}}</td>
+            <td>{{controller.dog.owner}}</td>
+            <td>{{controller.dog.breed}}</td>
+        </tr>
+    </table>
