@@ -1,0 +1,19 @@
+<header class="w3-container w3-theme w3-card-2">
+    <h1>Products</h1>
+</header>
+
+<div class="w3-container w3-text-theme">
+    <table class="w3-table-all">
+        <tr>
+            <th>Product Name</th>
+        </tr>
+        <tr ng-repeat="product in controller.products">
+            <td>{{product.name}}</td>
+            <td><button ng-click="controller.goToDetails(product.productId)">Details</button></td>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <button ng-click="controller.goToAdd()">Add a Product</button>
+</div>

@@ -1,0 +1,17 @@
+<header class="w3-container w3-theme w3-card-2">
+    <h1>Add a Product</h1>
+</header>
+
+<div class="w3-container w3-text-theme">
+    <form class="w3-container" ng-submit="controller.addProduct()">
+        <ul>
+            <label>Product Name</label>
+            <li><input type="text" ng-model="controller.product.name"></li>
+            <label>Product Description</label>
+            <li><input type="text" ng-model="controller.product.description"></li>
+            <label>Product Price</label>
+            <li><input type="number" ng-model="controller.product.price"></li>
+            <li><input type="submit" value="Save"></li>
+        </ul>   
+    </form>
+</div>
