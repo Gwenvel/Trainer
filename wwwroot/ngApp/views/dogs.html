@@ -1,0 +1,14 @@
+<h1>Dogs</h1>
+
+<table class="w3-table-all">
+    <tr><th>Name</th> <th>Age</th> <th>Owner</th> <th>Breed</th></tr>
+    <tr ng-repeat="dog in controller.dogs">
+       <td> {{ dog.name }} </td> 
+       <td> {{ dog.age }} </td>
+       <td> {{ dog.owner }} </td>
+       <td> {{ dog.breed }} </td>
+       <td> <button ng-click="controller.getDogId(dog.dogId)">Edit</button> </td>
+       <td> <button ng-click="">Delete</button> </td>
+    </tr>
+    </table>
+<p><a ui-sref="addDog">Add a Dog</a></p>
