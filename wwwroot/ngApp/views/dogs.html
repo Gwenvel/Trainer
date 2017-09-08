@@ -8,7 +8,7 @@
        <td> {{ dog.owner }} </td>
        <td> {{ dog.breed }} </td>
        <td> <button ng-click="controller.getDogId(dog.dogId)">Edit</button> </td>
-       <td> <button ng-click="">Delete</button> </td>
+       <td> <button ng-click="controller.deleteDog(dog.dogId)">Delete</button> </td>
     </tr>
     </table>
 <p><a ui-sref="addDog">Add a Dog</a></p>
