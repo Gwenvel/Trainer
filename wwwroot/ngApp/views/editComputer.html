@@ -1,0 +1,12 @@
+<header class="w3-container w3-theme w3-card-2">
+        <h1><i class="fa fa-laptop"></i> Computers</h1>
+    </header>
+
+    <form class="w3-panel w3-card-4" ng-submit="controller.editComputer()">
+            <h2>Edit Computer</h2>
+            <p><input ng-model="controller.computer.brand" class="w3-input" type="text" name="brand"></p>
+            <p><input ng-model="controller.computer.cpu" class="w3-input" type="text" name="cpu"></p>
+            <p><input ng-model="controller.computer.memory" class="w3-input" type="text" name="memory"></p>
+            <p><input ng-model="controller.computer.price" class="w3-input" type="number" step="0.01" name="price"></p>
+            <p><input type="submit" value="Submit" class="w3-button w3-green"></p>
+        </form>
