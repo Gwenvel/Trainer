@@ -1,0 +1,19 @@
+<header class="w3-container w3-theme w3-card-2">
+    <h1>Product</h1>
+</header>
+
+<div class="w3-container w3-text-theme">
+    <table class="w3-table-all">
+        <tr>
+            <td>Product</td>
+            <td>Description</td>
+            <td>Price</td>
+        </tr>
+        <tr>
+            <td>{{controller.product.name}}</td>
+            <td>{{controller.product.description}}</td>
+            <td>{{controller.product.price | currency}}</td>
+            <td><button ng-click="controller.deleteProduct()">Delete</button></td>            
+        </tr>
+    </table>
+</div>
