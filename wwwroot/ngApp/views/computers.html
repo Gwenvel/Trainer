@@ -1,0 +1,30 @@
+<header class="w3-container w3-theme w3-card-2">
+    <h1><i class="fa fa-laptop"></i> Computers</h1>
+</header>
+
+<div class="w3-container w3-text-theme">
+    <h2>{{ controller.message }}</h2>
+</div>
+
+<table class="w3-table-all">
+    <tr>
+        <th>Brand</th>
+        <th>CPU</th>
+        <th>Memory</th>
+        <th>Price</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <tr ng-repeat="computer in controller.computers">
+        <td>{{ computer.brand }}</td>
+        <td>{{ computer.cpu }}</td>
+        <td>{{ computer.memory }}</td>
+        <td>{{ computer.price | currency }}</td>
+        <td><button ng-click="controller.getComputerId(computer.computerId)"class="w3-button w3-green">Edit</button></td>
+        <td><button ng-click="controller.delComputer(computer.computerId)" class="w3-button w3-green">Delete</button></td>
+    </tr>
+</table>
+<br>
+<div class="w3-container">
+    <button class="w3-button w3-green"><a ui-sref="addComputer">Add</a></button>
+</div>

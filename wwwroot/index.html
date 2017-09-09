@@ -13,6 +13,7 @@
 <body class="w3-theme-l5">
     <div class="w3-bar w3-theme-d5">
         <a ui-sref="home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Trainer</a>
+        <a ui-sref="computers" class="w3-bar-item w3-button"><i class="fa fa-laptop"></i> Computers</a>
     </div>
 
     <ui-view></ui-view>
@@ -26,10 +27,15 @@
 
     <!-- controllers -->
     <script src="/ngApp/controllers/mainController.js"></script>
+    <script src="/ngApp/controllers/computersController.js"></script>
+    <script src="/ngApp/controllers/addComputerController.js"></script>
+    <script src="/ngApp/controllers/editComputerController.js"></script>
+    
     
     <!-- services -->
     <script src="/ngApp/services/productService.js"></script>
-
+    <script src="/ngApp/services/computerService.js"></script>
+    
     <script src="/ngApp/app.js"></script>
 
 </body>
